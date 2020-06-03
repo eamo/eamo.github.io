@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Golf Checker</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("June 4, 2020 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("time").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  if (distance < 0) {
+    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20201306/0906' ,'_blank');
+  }
+  
+  if (distance + 2000 < 0) {
+    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20201306/0906' ,'_blank');
+  }
+
+}, 1000);
+</script>
+
+</head>
+<body>
+<a id="current-time">Countdown Time: </a><a id="time"></a>
+<p>
+ <button id="button1">13th June 9.06am</button>  
+</p>
+<p>
+<a id="new_test">This page will automatically press the button when the timer ends</a>
+<p>
+</body>
+<script>var buttons = document.getElementsByTagName("button");
+    buttons[0].onclick = function(e) {
+    	window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20201306/0906' ,'_blank');
+        //alert(this.id);
+    };
+</script>
+</html>
