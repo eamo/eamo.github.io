@@ -29,30 +29,33 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   
   if (distance < 0) {
-    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank');
+    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank', 'rel="noreferrer"');
   }
   
   if (distance + 2000 < 0) {
-    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank');
+    window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank', 'rel="noreferrer"');
   }
 
 }, 1000);
 </script>
 
 </head>
+<style>
+
+</style>
 <body>
-<a id="current-time">Countdown Time: </a><a id="time"></a>
+<a id="current-time" style="font-size:30px">Countdown Time: </a><a id="time" style="font-size:30px"></a>
 <p>
- <button id="button1">13th June 9.06am</button>  
+ <button id="button1" style="font-size:30px">13th June 9.06am</button>  
 </p>
 <p>
-<a href="https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906" target="_blank" rel="noreferrer">13th June 9.06am</a>
-<a id="new_test">This page will automatically press the button when the timer ends</a>
+<a href="https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906" target="_blank" rel="noreferrer" style="font-size:30px>13th June 9.06am</a>
+<a id="new_test" style="font-size:30px">This page will automatically press the button when the timer ends</a>
 <p>
 </body>
 <script>var buttons = document.getElementsByTagName("button");
     buttons[0].onclick = function(e) {
-    	window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank');
+    	window.open('https://members.brsgolf.com/grangecastle/bookings/book/1/20200613/0906' ,'_blank', 'rel="noreferrer"');
         //alert(this.id);
     };
 </script>
