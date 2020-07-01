@@ -2,8 +2,9 @@
 <html>
 <head>
 <title>Simple Golf Checker</title>
-<script>
-  // Set the date we're counting down to
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+// Set the date we're counting down to
 var countDownDate = new Date("June 4, 2020 12:00:00").getTime();
 
 // Update the count down every 1 second
@@ -24,6 +25,7 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("time").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+}, 1000);
   </script>
 </head>
 
